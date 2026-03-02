@@ -1,0 +1,66 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.mdm:golden-record-service >--------------------
+[INFO] Building golden-record-service 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.3:run (default-cli) > test-compile @ golden-record-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ golden-record-service ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ golden-record-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ golden-record-service ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\MDM System\golden-record-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ golden-record-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.3:run (default-cli) < test-compile @ golden-record-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.3:run (default-cli) @ golden-record-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-02T17:44:16.827+05:30  INFO 3692 --- [golden-record-service] [           main] c.m.g.GoldenRecordServiceApplication     : Starting GoldenRecordServiceApplication using Java 21.0.7 with PID 3692 (D:\MDM System\golden-record-service\target\classes started by KTIS Ropar in D:\MDM System\golden-record-service)
+2026-03-02T17:44:16.831+05:30  INFO 3692 --- [golden-record-service] [           main] c.m.g.GoldenRecordServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-02T17:44:17.796+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-02T17:44:17.798+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-02T17:44:17.939+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+2026-03-02T17:44:17.966+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-02T17:44:17.968+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-02T17:44:17.983+05:30  INFO 3692 --- [golden-record-service] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mdm.golden.repository.AuditLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-02T17:44:17.984+05:30  INFO 3692 --- [golden-record-service] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mdm.golden.repository.GoldenCustomerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-02T17:44:17.984+05:30  INFO 3692 --- [golden-record-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-03-02T17:44:18.655+05:30  INFO 3692 --- [golden-record-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-03-02T17:44:18.667+05:30  INFO 3692 --- [golden-record-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-02T17:44:18.668+05:30  INFO 3692 --- [golden-record-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-02T17:44:18.724+05:30  INFO 3692 --- [golden-record-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-02T17:44:18.724+05:30  INFO 3692 --- [golden-record-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1806 ms
+2026-03-02T17:44:19.140+05:30  INFO 3692 --- [golden-record-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02T17:44:19.336+05:30  INFO 3692 --- [golden-record-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-02T17:44:19.411+05:30  INFO 3692 --- [golden-record-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-02T17:44:19.759+05:30  INFO 3692 --- [golden-record-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-02T17:44:19.815+05:30  INFO 3692 --- [golden-record-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-02T17:44:19.998+05:30  INFO 3692 --- [golden-record-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45bf93bb
+2026-03-02T17:44:19.999+05:30  INFO 3692 --- [golden-record-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-02T17:44:20.083+05:30  WARN 3692 --- [golden-record-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02T17:44:31.452+05:30  INFO 3692 --- [golden-record-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02T17:44:48.505+05:30  INFO 3692 --- [golden-record-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-02T17:44:48.744+05:30  INFO 3692 --- [golden-record-service] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-02T17:44:49.597+05:30  WARN 3692 --- [golden-record-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-02T17:44:49.964+05:30  INFO 3692 --- [golden-record-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2026-03-02T17:44:49.971+05:30  INFO 3692 --- [golden-record-service] [           main] c.m.g.GoldenRecordServiceApplication     : Started GoldenRecordServiceApplication in 33.665 seconds (process running for 34.036)

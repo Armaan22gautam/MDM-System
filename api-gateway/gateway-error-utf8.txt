@@ -1,0 +1,60 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.mdm:api-gateway >-------------------------
+[INFO] Building api-gateway 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.3:run (default-cli) > test-compile @ api-gateway >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ api-gateway ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ api-gateway ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ api-gateway ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\MDM System\api-gateway\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ api-gateway ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.3:run (default-cli) < test-compile @ api-gateway <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.3:run (default-cli) @ api-gateway ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-03-02T18:11:59.699+05:30  INFO 18228 --- [api-gateway] [           main] com.mdm.gateway.ApiGatewayApplication    : Starting ApiGatewayApplication using Java 21.0.7 with PID 18228 (D:\MDM System\api-gateway\target\classes started by KTIS Ropar in D:\MDM System\api-gateway)
+2026-03-02T18:11:59.703+05:30  INFO 18228 --- [api-gateway] [           main] com.mdm.gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-02T18:12:00.726+05:30  INFO 18228 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e4bb1cdd-3e85-3cff-8ae6-58a2b0d564b0
+2026-03-02T18:12:02.379+05:30  INFO 18228 --- [api-gateway] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-03-02T18:12:02.832+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-03-02T18:12:02.833+05:30  INFO 18228 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-03-02T18:12:04.114+05:30  INFO 18228 --- [api-gateway] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-03-02T18:12:04.355+05:30  INFO 18228 --- [api-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2026-03-02T18:12:05.382+05:30  INFO 18228 --- [api-gateway] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-03-02T18:12:06.421+05:30  INFO 18228 --- [api-gateway] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-03-02T18:12:06.542+05:30  INFO 18228 --- [api-gateway] [           main] com.mdm.gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 8.442 seconds (process running for 9.063)
