@@ -9,23 +9,23 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://localhost:5173"
+            allowedOrigins: "${FRONTEND_URL:http://localhost:5173}"
             allowedMethods: "*"
             allowedHeaders: "*"
             allowCredentials: true
       routes:
         - id: auth-service
-          uri: http://localhost:8081
+          uri: ${AUTH_SERVICE_URL:http://localhost:8081}
           predicates:
             - Path=/auth/**
         - id: ingestion-service
-          uri: http://localhost:8082
+          uri: ${INGESTION_SERVICE_URL:http://localhost:8082}
           predicates:
             - Path=/customers/**
           filters:
             - AuthenticationFilter
         - id: golden-record-service
-          uri: http://localhost:8084
+          uri: ${GOLDEN_RECORD_SERVICE_URL:http://localhost:8084}
           predicates:
             - Path=/golden/**
           filters:

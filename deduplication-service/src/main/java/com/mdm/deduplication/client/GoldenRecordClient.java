@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "golden-record-service", url = "http://localhost:8084/golden")
+@FeignClient(name = "golden-record-service", url = "${golden-record.url}")
 public interface GoldenRecordClient {
 
     @GetMapping("/search")

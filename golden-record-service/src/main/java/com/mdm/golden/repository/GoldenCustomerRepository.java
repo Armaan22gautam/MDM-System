@@ -12,9 +12,9 @@ import java.util.List;
 public interface GoldenCustomerRepository extends JpaRepository<GoldenCustomer, Long> {
 
     @Query("SELECT g FROM GoldenCustomer g WHERE " +
-            "(g.email = :email) OR " +
-            "(g.phoneNumber = :phone) OR " +
-            "(g.firstName = :firstName AND g.lastName = :lastName)")
+            "(:email IS NOT NULL AND g.email = :email) OR " +
+            "(:phone IS NOT NULL AND g.phoneNumber = :phone) OR " +
+            "(:firstName IS NOT NULL AND :lastName IS NOT NULL AND g.firstName = :firstName AND g.lastName = :lastName)")
     List<GoldenCustomer> findPossibleMatches(
             @Param("email") String email,
             @Param("phone") String phone,
