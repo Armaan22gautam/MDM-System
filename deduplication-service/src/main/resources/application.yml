@@ -6,8 +6,11 @@ spring:
     name: deduplication-service
   kafka:
     consumer:
-      bootstrap-servers: localhost:9093
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9093}
       group-id: dedup-group
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+golden-record:
+  url: ${GOLDEN_RECORD_CLIENT_URL:http://localhost:8084/golden}

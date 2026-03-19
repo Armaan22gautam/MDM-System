@@ -56,15 +56,15 @@ public class MatchingEngineService {
                 }
             }
 
-            // 3. Decide Survivorship (Merge vs Create)
-            // Wait, actually Survivorship should probably take place in the Golden Record
-            // Service
-            // We just pass it to the Golden Service with the result.
-            // But since GoldenRecordClient.survive is generic here, we can pass it
-
-            // For now, let's assume we just trigger GoldenRecordClient.survive with the
-            // RawData.
-            goldenRecordClient.applySurvivorship(Long.valueOf(rawDto.getSourceRecordId().hashCode()), rawDto);
+            // 3. Decide Survivorship (Merge into existing vs. Create new)
+            if (highestScore >= MATCH_THRESHOLD && bestCandidate != null) {
+                log.info("Match found with score {}%. Merging into Golden Record ID: {}",
+                        highestScore, bestCandidate.getId());
+                goldenRecordClient.applySurvivorship(bestCandidate.getId(), rawDto);
+            } else {
+                log.info("No match found (best score: {}%). Promoting to new Golden Record.", highestScore);
+                goldenRecordClient.applySurvivorship(null, rawDto);
+            }
             log.info("Finished evaluation. Triggered Survivorship.");
 
         } catch (Exception e) {

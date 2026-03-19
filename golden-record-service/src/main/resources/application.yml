@@ -5,9 +5,9 @@ spring:
   application:
     name: golden-record-service
   datasource:
-    url: jdbc:mysql://localhost:3307/mdm_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: root
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3307}/mdm_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -18,5 +18,5 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
   data:
     redis:
-      host: localhost
-      port: 6380
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6380}
